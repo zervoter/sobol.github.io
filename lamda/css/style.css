@@ -1,0 +1,670 @@
+h2 {
+  font-family: "Yeseva One", serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+body {
+  min-width: 1300px;
+}
+.page-header {
+  background-image: url("../img/header-bg.jpg");
+  background-position: top;
+  min-height: 750px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-header__wrapper {
+  width: 1250px;
+  margin: 0 auto;
+}
+.page-header__container-menu {
+  margin: auto;
+  transition: all 0.6s ease;
+}
+.page-header__container-menu-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #191919;
+  z-index: 100;
+}
+.page-header__container {
+  display: flex;
+  width: 1250px;
+  margin: auto;
+  justify-content: space-between;
+}
+.page-header__logo {
+  background-image: url("../img/main-logo.png");
+  background-position: 0px 5px;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 156px;
+  height: 82px;
+  margin: auto;
+}
+.page-header__social {
+  margin: auto;
+}
+.page-header__list {
+  padding: 0;
+}
+.page-header__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-header__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #dab33e;
+  padding-right: 10px;
+  transition: 0.25s;
+}
+.page-header__link:hover {
+  color: #fe0012;
+  transform: scale(1.5, 1.5);
+  transition: 0.3s ease-in;
+}
+.page-header__container-title {
+  padding-top: 120px;
+  position: relative;
+}
+.page-header__container-title::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/title-deco.png");
+  right: 504px;
+  top: 360px;
+  width: 232px;
+  height: 43px;
+}
+.page-header__title {
+  font-family: "Yeseva One", serif;
+  font-size: 90px;
+  font-weight: 400;
+  text-align: center;
+  width: 970px;
+  margin: 0 auto;
+  color: #f5f6f7;
+}
+.page-header__buttons {
+  text-align: center;
+  padding-top: 120px;
+}
+.page-header__buttons-link {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Lato", serif;
+  font-size: 400;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 17px 50px;
+}
+.page-header__buttons-link:hover {
+  padding: 17px 80px;
+}
+.page-header__buttons-link--black {
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.55);
+  margin-right: 25px;
+  transition: 0.5s;
+}
+.page-header__buttons-link--black:hover {
+  background: #000000;
+  transition: 0.5s;
+  color: #fff;
+}
+.page-header__buttons-link--white {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.25);
+  transition: 0.5s;
+}
+.page-header__buttons-link--white:hover {
+  background: #ffffff;
+  transition: 0.5s;
+  color: #000;
+}
+.main-nav {
+  margin: auto;
+}
+.main-nav__list {
+  width: 865px;
+}
+.main-nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 55px;
+}
+.main-nav__item--no-pading {
+  padding-left: 0;
+}
+.main-nav__link {
+  display: inline-block;
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.27s ease;
+}
+.main-nav__link:hover {
+  transition: 0.3s ease-in;
+  transform: scale(1.5, 1.5);
+  color: #fe0012;
+}
+.features {
+  background-image: url("../img/container-bg.jpg");
+  min-height: 710px;
+  background-size: cover;
+  background-position: center;
+}
+.features__wrapper {
+  width: 1250px;
+  margin: 0 auto;
+  display: flex;
+}
+.features__container {
+  position: relative;
+  width: 430px;
+  text-align: center;
+}
+.features__container::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/coock.png");
+  width: 219px;
+  height: 221px;
+  left: 135px;
+  bottom: 60px;
+}
+.features__container::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-deco.png");
+  width: 247px;
+  height: 24px;
+  left: 95px;
+  top: 160px;
+}
+.features__title {
+  margin-top: 0;
+  padding-top: 100px;
+  text-align: center;
+  color: #cc9900;
+}
+.features__text {
+  font-family: "Lato", serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 50px;
+}
+.features__dish-logo {
+  background-image: url("../img/dish.png");
+  width: 621px;
+  height: 625px;
+  margin-left: auto;
+  margin-top: 45px;
+}
+.features-ingredients {
+  background-image: url("../img/features-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 758px;
+}
+.features-ingredients__wrapper {
+  width: 1250px;
+  margin: 0 auto;
+}
+.features-ingredients__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 570px;
+  text-align: center;
+}
+.features-ingredients__content {
+  position: relative;
+  background: rgba(0, 0, 0, 0.55);
+  margin-top: 100px;
+}
+.features-ingredients__content::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-deco--white.png");
+  width: 247px;
+  height: 24px;
+  left: 160px;
+  top: 140px;
+}
+.features-ingredients__title {
+  margin-top: 75px;
+  color: #fff;
+}
+.features-ingredients__text {
+  font-family: "Lato", serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 50px;
+  width: 430px;
+  margin: 0 auto;
+  color: #fff;
+  padding-bottom: 55px;
+}
+.features-ingredients__icons {
+  display: flex;
+  margin: auto;
+  width: 385px;
+  padding-bottom: 70px;
+}
+.features-ingredients__icon-1 {
+  background-image: url("../img/icon-1.png");
+  width: 110px;
+  height: 110px;
+  margin-right: 25px;
+}
+.features-ingredients__icon-2 {
+  background-image: url("../img/icon-2.png");
+  width: 110px;
+  height: 110px;
+  margin-right: 25px;
+}
+.features-ingredients__icon-3 {
+  background-image: url("../img/icon-3.png");
+  width: 110px;
+  height: 110px;
+}
+.menu {
+  background-image: url("../img/menu-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.menu__wrapper {
+  width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+.menu__container-left {
+  position: relative;
+  width: 430px;
+  margin-left: 70px;
+  margin-top: 60px;
+}
+.menu__container-left::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-deco.png");
+  width: 247px;
+  height: 24px;
+  top: 75px;
+  left: 90px;
+}
+.menu__container-right {
+  position: relative;
+  width: 430px;
+  margin-left: auto;
+  margin-right: 70px;
+  margin-top: 60px;
+}
+.menu__container-right::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-deco.png");
+  width: 247px;
+  height: 24px;
+  top: 75px;
+  left: 90px;
+}
+.menu__container-left--margin {
+  margin-top: 50px;
+}
+.menu__container-right--margin {
+  margin-top: -50px;
+}
+.menu__title {
+  color: #cc9900;
+  text-align: center;
+}
+.menu__content {
+  display: flex;
+  flex-wrap: wrap;
+  color: #cc9900;
+  border-bottom: 1px solid #e0d2a2;
+}
+.menu__sub-title {
+  font-family: "Yeseva One", serif;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.menu__price {
+  margin-left: auto;
+  font-family: "Yeseva One", serif;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.menu__text {
+  font-family: "Lato", serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.reviews {
+  background-image: url("../img/review-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 758px;
+}
+.reviews__wrapper {
+  position: relative;
+  width: 1250px;
+  margin: 0 auto;
+}
+.reviews__container {
+  display: flex;
+  width: 770px;
+  margin: auto;
+}
+.reviews__content {
+  background: rgba(0, 0, 0, 0.55);
+  margin-top: 100px;
+  width: 770px;
+}
+.reviews__slides {
+  outline: none;
+}
+.reviews__button-prev {
+  position: absolute;
+  left: 50px;
+  top: 350px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+.reviews__button-prev:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: ease 0.3s;
+}
+.reviews__button-next {
+  position: absolute;
+  top: 350px;
+  right: 50px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+.reviews__button-next:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: ease 0.3s;
+}
+.reviews__title {
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+}
+.reviews__text {
+  font-family: "Yeseva One", serif;
+  text-align: center;
+  width: 630px;
+  margin: auto;
+  font-size: 22px;
+  line-height: 40px;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.reviews__description {
+  font-family: "Lato", serif;
+  padding-bottom: 65px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.booking {
+  background-image: url("../img/container-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.booking__wrapper {
+  width: 1250px;
+  margin: auto;
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.booking__container-left {
+  display: flex;
+  width: 600px;
+}
+.booking__img {
+  margin-left: 35px;
+}
+.booking__container-right {
+  width: 430px;
+  margin: auto;
+}
+.booking__content {
+  position: relative;
+  text-align: center;
+  font-family: "Lato", serif;
+}
+.booking__content::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-deco.png");
+  width: 247px;
+  height: 24px;
+  top: 60px;
+  left: 90px;
+}
+.booking__title {
+  color: #c9a131;
+}
+.booking__text {
+  padding-top: 50px;
+}
+.booking__form {
+  font-family: "Open sans", serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+.booking__form-content {
+  margin: auto;
+}
+.booking__form-text {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #c9a131;
+  font-weight: 700;
+}
+.booking__input {
+  width: 175px;
+  font-style: italic;
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 0 6px 12px;
+  margin-right: 22px;
+  outline: none;
+  border: 1px solid #c8c6c6;
+}
+.booking__input:focus {
+  border: 1px solid #c9a131;
+}
+.booking__input--no-margin {
+  margin-right: 0;
+}
+.booking__input-date {
+  width: 175px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 0 5px 12px;
+  margin-right: 22px;
+}
+.booking__cotnrol {
+  padding-top: 30px;
+  margin: auto;
+}
+.booking__btn {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 200px;
+  border: none;
+  background: #c9a131;
+  color: #fff;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+.booking__btn:hover {
+  width: 270px;
+  background: #866509;
+  transition: 0.5s;
+}
+.booking__container-center {
+  position: relative;
+  text-align: center;
+  width: 800px;
+  margin: auto;
+}
+.booking__container-center::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-deco.png");
+  width: 247px;
+  height: 24px;
+  top: 135px;
+  left: 276px;
+}
+.booking__title--uppercase {
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+.booking__link {
+  display: block;
+  padding: 15px 0;
+  width: 200px;
+  margin: auto;
+  border: 1px solid #c8c6c6;
+  background: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.booking__link--margin {
+  margin-top: 60px;
+}
+.booking__accordion {
+  display: none;
+}
+.booking .active {
+  width: 798px;
+  transition: 0.5s;
+}
+.page-footer {
+  background: #191919;
+}
+.page-footer__wrapper {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+}
+.page-footer__about-us {
+  position: relative;
+  width: 295px;
+}
+.page-footer__about-us::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-deco--white.png");
+  width: 247px;
+  height: 24px;
+  left: 30px;
+  top: 60px;
+}
+.page-footer__text {
+  font-family: "Open sans", serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.page-footer__text--padding {
+  margin-top: 0;
+  padding-top: 0;
+}
+.page-footer__hours {
+  position: relative;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page-footer__hours::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-deco--white.png");
+  width: 247px;
+  height: 24px;
+  left: 25px;
+  top: 60px;
+}
+.page-footer__icons {
+  padding-bottom: 20px;
+  font-size: 0;
+}
+.page-footer__span {
+  font-weight: 700;
+}
+.page-footer__location {
+  position: relative;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page-footer__location::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-deco--white.png");
+  width: 247px;
+  height: 24px;
+  left: 0px;
+  top: 60px;
+}
+.page-footer__link {
+  color: #fff;
+  transition: 0.3s;
+  font-size: 16px;
+  padding-right: 10px;
+}
+.page-footer__link--no-padding {
+  padding-right: 0;
+}
+.page-footer__link:hover {
+  color: #fe0012;
+  transition: 0.3s;
+}
