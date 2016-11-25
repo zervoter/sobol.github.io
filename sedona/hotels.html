@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SEDONA-Hotels</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container clearfix">
+				<nav class="main-menu">
+					<ul>
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Фото и видео</a></li>
+						<li><a href="#">Карта штата</a></li>
+						<li><a href="hotels.html">Гостиницы</a></li>
+					</ul>
+				</nav>
+				<div class="main-logo">
+					<a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+				</div>
+			</div>
+		</header>
+
+		<div class="container clearfix">
+			<div class="hotels-bg">
+				<div class="hotels-left clearfix">
+					<div class="hotels-checkbox">
+						<p>Инфраструктура:</p>
+						<input type="checkbox" id="s-pool" name="structure" checked>
+						<label for="s-pool">Бассейн</label>
+						<input type="checkbox" id="parking" name="structure">
+						<label for="parking">Парковка</label>
+						<input type="checkbox" id="wifi" name="structure">
+						<label for="wifi">Wi-fi</label>
+					</div>
+					<div class="hotels-checkbox">
+						<p>Тип жилья:</p>
+						<input type="checkbox" id="hostel" name="house-type" checked>
+						<label for="hostel">Гостиница</label>
+						<input type="checkbox" id="motel" name="house-type" checked>
+						<label for="motel">Мотель</label>
+						<input type="checkbox" id="apartaments" name="house-type">
+						<label for="apartaments">Апартаменты</label>
+					</div>
+				</div>
+				<div class="hotels-right clearfix">
+					<div class="price">
+						<div class="price-title">
+							<p>Стоимость в сутки (р):</p>
+						</div>
+						<div class="price-window">	
+							<span>От</span><input type="number" class="spacer" name="costs" value="0">
+							<span>До</span><input type="number" name="costs" value="3000">
+						</div>	
+						<div class="price-filter">
+							<div class="filter-control">
+								<div class="scale"><div style="width:265px;" class="bar"></div></div>
+								<div class="toggle min-toggle"></div>
+								<div class="toggle max-toggle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sorting-column clearfix">
+				<div class="sort-left">
+					<span class="bold-text">Найдено: 3</span>
+					<span class="light-text">Сортировка:</span>
+					<a href="#" class="active">По цене</a>
+					<a href="#">По типу</a>
+					<a href="#">По рейтингу</a>
+				</div>
+				<div class="sort-right">
+					<div class="up"></div>
+					<div class="down active"></div>
+				</div>	
+			</div>
+			<div class="hotels-catalog clearfix">
+				<div class="catalog-left">
+					<a href="#"><img src="img/img-1.jpg" width="135" height="90" alt="Amara resort"></a>
+					<div class="catalog-info">
+						<p>Amara Resort & Spa</p>
+						<span>Гостиница</span>
+						<span>От 3500 р.</span>
+						<a href="#" class="btn-more">Подробнее</a>
+						<a href="#" class="btn-reserved">Забронировать</a>
+					</div>	
+				</div>
+				<div class="catalog-right">
+					<div class="stars">
+						<div class="stars-icon icon-1"></div>
+						<div class="stars-icon icon-2"></div>
+						<div class="stars-icon icon-3"></div>
+						<div class="stars-icon icon-4"></div>
+					</div>
+					<p>Рейтинг: 8,5</p>
+				</div>
+				<div class="catalog-left">
+					<a href="#"><img src="img/img-2.jpg" width="135" height="90" alt="Amara resort"></a>
+					<div class="catalog-info">
+						<p>Desert Quail Inn</p>
+						<span>Мотель</span>
+						<span>От 2000 р.</span>
+						<a href="#" class="btn-more">Подробнее</a>
+						<a href="#" class="btn-reserved">Забронировать</a>
+					</div>	
+				</div>
+				<div class="catalog-right">
+					<div class="stars">
+						<div class="stars-icon icon-1"></div>
+						<div class="stars-icon icon-2"></div>
+					</div>
+					<p>Рейтинг: 8,9</p>
+				</div>
+				<div class="catalog-left">
+					<a href="#"><img src="img/img-3.jpg" width="135" height="90" alt="Amara resort"></a>
+					<div class="catalog-info">
+						<p>Villas at Poco Diablo</p>
+						<span>Апартаменты</span>
+						<span>От 4000 р.</span>
+						<a href="#" class="btn-more">Подробнее</a>
+						<a href="#" class="btn-reserved">Забронировать</a>
+					</div>	
+				</div>
+				<div class="catalog-right">
+					<div class="stars">
+						<div class="stars-icon icon-1"></div>
+						<div class="stars-icon icon-2"></div>
+						<div class="stars-icon icon-3"></div>
+					</div>
+					<p>Рейтинг: 9,2</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container clearfix">
+				<div class="footer-info clearfix">
+					<div class="visit-info">
+						<span>#visitsedona</span>
+					</div>
+					<div class="social">
+						<a class="icon-twitter" href="#"></a>
+						<a class="icon-facebook" href="#"></a>
+						<a class="icon-youtube" href="#"></a>
+					</div>
+					<div class="websites">
+						<span>website by</span><a class="site-1" href="#"></a>
+						<span class="custom">for</span><a class="site-2" href="#"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
