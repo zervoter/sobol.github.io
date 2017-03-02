@@ -1,0 +1,971 @@
+body {
+  font-family: "Roboto", serif;
+}
+h1 {
+  margin-top: 50px;
+  max-width: 320px;
+  font-weight: 300;
+  font-size: 37px;
+  text-transform: uppercase;
+  color: #212121;
+}
+h3 {
+  margin-top: 0;
+  font-weight: 400;
+  text-align: left;
+  font-size: 22px;
+  color: #212121;
+}
+h4 {
+  font-weight: 300;
+  color: #8b8b89;
+  margin-top: 0;
+  padding-bottom: 13px;
+}
+.main-info__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.info {
+  display: none;
+  background-color: #546e7a;
+  transition: margin 1s ease;
+}
+.info__wrapper {
+  padding: 5px 20px;
+}
+.info__container {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.info__text {
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+  color: #fff;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  width: 300px;
+  margin: auto;
+}
+.info__link {
+  text-decoration: underline;
+  color: #fff;
+  transition: 0.2s ease;
+}
+.info__link:hover {
+  color: #000;
+  transition: 0.2s ease;
+}
+.info__icon {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: 30px;
+  height: 30px;
+  right: -5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.info__icon:hover .st5 {
+  fill: #000;
+  transition: 0.2s ease;
+}
+.info__icon path {
+  transition: 0.2s ease;
+}
+.page-header {
+  background-color: #8b8b89;
+}
+.page-header__container-menu {
+  display: none;
+  padding: 0 20px;
+}
+.intro {
+  overflow: hidden;
+}
+.intro__wrapper {
+  background-color: #8b8b89;
+  padding: 0 20px;
+  padding-top: 25px;
+  min-height: 430px;
+}
+.intro__text {
+  color: #e0e0e0;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 340px;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+.intro__intro-bottom {
+  background-image: url("../img/Roma-small.png");
+  width: 260px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin: 0 auto;
+}
+.intro__container-intro {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.service__wrapper {
+  padding: 0 20px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+.service__accord {
+  margin-bottom: 35px;
+}
+.service__accordion {
+  margin-bottom: 33px;
+  display: none;
+}
+.service__link {
+  display: inline;
+  vertical-align: top;
+  text-decoration: none;
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #212121;
+  border-bottom: 3px dashed #212121;
+  transition: 0.2s ease;
+}
+.service__link:hover {
+  color: #546e7a;
+  border-bottom: 3px dashed #546e7a;
+  transition: 0.2s ease;
+}
+.service__link:focus {
+  color: #546e7a;
+  border-bottom: 3px dashed #546e7a;
+}
+.service__link--no-padding {
+  padding-top: 0;
+}
+.service__content {
+  border-bottom: 1px solid #546e7a;
+}
+.service__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #546e7a;
+  padding-top: 17px;
+}
+.service__text--padding-top {
+  padding-top: 30px;
+}
+.service__span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 25px;
+  color: #546e7a;
+}
+.discount__wrapper {
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+.discount__number {
+  display: block;
+  font-size: 100px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+  color: #212121;
+}
+.discount__text {
+  font-size: 14px;
+  margin-top: 0;
+  color: #212121;
+}
+.discount__span {
+  font-size: 14px;
+  color: #8b8b89;
+}
+.benefits__wrapper {
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+.benefits p {
+  font-size: 14px;
+  color: #212121;
+}
+.experience__wrapper {
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+.experience p {
+  margin: 0;
+  font-size: 14px;
+  color: #212121;
+}
+.competence__wrapper {
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+.competence p {
+  font-size: 14px;
+  color: #212121;
+}
+.portfolio__wrapper {
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+.portfolio__container-bottom {
+  text-align: center;
+}
+.portfolio__content {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  text-decoration: none;
+}
+.portfolio__img {
+  display: block;
+  width: auto;
+  height: 280px;
+  margin-bottom: 40px;
+}
+.portfolio__icon {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 43%;
+  z-index: 10;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.portfolio__text {
+  position: absolute;
+  width: 81%;
+  left: 50%;
+  bottom: 20%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: #263238;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contacts__wrapper {
+  padding: 0 20px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+.contacts__container-top {
+  padding-bottom: 25px;
+}
+.contacts__container-middle {
+  padding-bottom: 50px;
+}
+.contacts__container-bottom {
+  padding-bottom: 50px;
+}
+.contacts__text {
+  font-size: 14px;
+  color: #212121;
+}
+.contacts__link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #212121;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.contacts__icons {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  transition: 0.2s ease;
+}
+.contacts__icons path,
+.contacts__icons polygon {
+  transition: 0.2s ease;
+}
+.contacts__icons.facebook {
+  margin-left: -10px;
+}
+.contacts__icons--smaller {
+  width: 40px;
+  height: 40px;
+}
+.contacts__icons--visa svg {
+  width: 110%;
+  margin-left: -5%;
+}
+.contacts__icons--ya svg {
+  margin-top: -25%;
+  margin-bottom: 25%;
+}
+.contacts__icons--webmoney svg {
+  margin-top: -16%;
+  margin-bottom: 16%;
+}
+.contacts__icons:hover .fb {
+  fill: #3b5998;
+}
+.contacts__icons:hover .twit {
+  fill: #1da1f2;
+}
+.contacts__icons:hover .inst {
+  fill: #517fa4;
+}
+.contacts__icons:hover .vk {
+  fill: #507299;
+}
+.contacts__icons:hover .it {
+  fill: #69c;
+}
+.contacts__icons:hover .fl {
+  fill: #5fbd37;
+}
+.contacts__card-hover {
+  cursor: pointer;
+}
+.contacts__card-hover:hover .icon {
+  opacity: 0;
+}
+.contacts__card-hover:hover .icon-color {
+  opacity: 1;
+}
+.contacts__mail {
+  padding-bottom: 25px;
+}
+.contacts__skype {
+  padding-bottom: 25px;
+}
+.contacts__social {
+  padding-bottom: 15px;
+}
+.contacts__freelance {
+  margin-left: -2px;
+  margin-bottom: 35px;
+}
+.contacts__card {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -3px;
+}
+.contacts__web-wallet {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -3px;
+}
+.contacts__description {
+  font-size: 11px;
+  padding-top: 50px;
+  color: #bdbdbd;
+}
+.contacts span {
+  margin-left: 10px;
+}
+.contacts__icons .icon {
+  transition: opacity 0.3s ease;
+}
+.contacts__icons .icon-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+@media (min-width: 480px) {
+  h1 {
+    font-size: 44px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  .info__icon {
+    position: relative;
+  }
+  .info__text {
+    width: auto;
+  }
+  .intro__text {
+    font-size: 16px;
+  }
+  .intro__intro-bottom {
+    height: 335px;
+    width: 350px;
+  }
+  .portfolio__img {
+    width: auto;
+    height: 430px;
+  }
+  .portfolio__text {
+    width: 81%;
+    bottom: 17%;
+    font-size: 32px;
+  }
+  .contacts__card {
+    margin-left: -13px;
+  }
+  .contacts__web-wallet {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -13px;
+  }
+  .contacts__icons.facebook {
+    margin-left: -13px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 54px;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .info__text {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .page-header__container-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: #424242;
+    z-index: 100;
+  }
+  .page-header__list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .page-header__item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+  }
+  .page-header__link {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #bdbdbd;
+    padding: 15px 0;
+    transition: 0.2s ease;
+  }
+  .page-header__link:hover {
+    color: #f2df42;
+    transition: 0.2s ease;
+  }
+  .intro__wrapper {
+    padding: 0;
+    height: 100vh;
+    min-height: 570px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .intro__container-intro {
+    padding-top: 90px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .intro__text {
+    font-size: 16px;
+    padding-bottom: 0;
+  }
+  .intro__title--margin-left {
+    margin-left: -3px;
+  }
+  .intro__intro-bottom {
+    width: 585px;
+    height: 540px;
+    max-height: 100%;
+    position: absolute;
+    right: -6%;
+    bottom: 0;
+  }
+  .intro__title--absolute {
+    position: absolute;
+    bottom: 10%;
+    margin: 0;
+  }
+  .intro__intro-bottom {
+    background-image: url("../img/Roma-big.png");
+  }
+  .service__text {
+    font-size: 16px;
+  }
+  .service__link {
+    font-size: 22px;
+  }
+  .discount__container-bottom {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .discount__content-left {
+    width: 360px;
+  }
+  .discount__content-right {
+    width: 345px;
+  }
+  .discount__number {
+    font-size: 130px;
+    text-align: left;
+  }
+  .discount__text {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .discount__text--margin-left {
+    margin-left: 43px;
+    width: 100%;
+  }
+  .discount__span {
+    display: block;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-left: 10px;
+  }
+  .benefits p {
+    font-size: 16px;
+  }
+  .experience p {
+    font-size: 16px;
+  }
+  .competence p {
+    font-size: 16px;
+  }
+  .portfolio__container-bottom {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 44px 0;
+  }
+  .portfolio__content {
+    height: 225px;
+  }
+  .portfolio__img {
+    width: auto;
+    height: 225px;
+  }
+  .portfolio__text {
+    bottom: 9%;
+    font-size: 18px;
+  }
+  .portfolio__text.small {
+    font-size: 13px;
+    bottom: 10.5%;
+  }
+  .portfolio__icon {
+    top: 46%;
+  }
+  .contacts__content-bottom {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts__social {
+    width: 490px;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 74px;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .page-header__container-menu {
+    padding: 0;
+  }
+  .page-header__list {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .page-header__item {
+    font-size: 16px;
+  }
+  .intro__text {
+    max-width: none;
+    width: 465px;
+  }
+  .intro__title--margin-left {
+    margin-left: -6px;
+    margin-top: 0;
+  }
+  .intro__container-intro {
+    width: 980px;
+    margin: 0 auto;
+    padding: 125px 20px 0;
+  }
+  .intro__intro-bottom {
+    width: 61%;
+    height: 90%;
+    height: calc(100% - 50px);
+    max-height: 100%;
+    right: -6%;
+    background-position: bottom right;
+  }
+  .service__wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .service__link {
+    font-size: 26px;
+  }
+  .service__content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .service__text--padding-top {
+    padding-top: 17px;
+  }
+  .service__text {
+    font-size: 17px;
+    padding-bottom: 30px;
+  }
+  .service__col-1 {
+    width: 360px;
+    margin-bottom: 0;
+  }
+  .service__col-2 {
+    width: 185px;
+    margin-bottom: 0;
+  }
+  .service__col-3 {
+    width: 390px;
+    margin-bottom: 0;
+  }
+  .service__span {
+    font-size: 13px;
+  }
+  .discount__wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .discount__number {
+    font-size: 175px;
+  }
+  .discount__text {
+    font-size: 17px;
+  }
+  .discount__span {
+    padding-top: 30px;
+  }
+  .benefits__wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .benefits p {
+    font-size: 17px;
+    padding-bottom: 13px;
+  }
+  .experience__wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .experience p {
+    font-size: 17px;
+  }
+  .competence__wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .competence p {
+    font-size: 17px;
+    padding-bottom: 13px;
+  }
+  .portfolio__wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .portfolio__img {
+    margin-bottom: 0;
+  }
+  .contacts {
+    background-color: #e2e2e2;
+  }
+  .contacts__wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .contacts__content-top {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts__call-info {
+    margin-bottom: 17px;
+  }
+  .contacts__social-info {
+    margin-bottom: 60px;
+  }
+  .contacts__title {
+    margin-bottom: 26px;
+  }
+  .contacts__mail {
+    width: 490px;
+  }
+  .contacts__text {
+    font-size: 17px;
+  }
+  .contacts__freelance {
+    margin-bottom: 0;
+  }
+  .contacts__link {
+    font-size: 26px;
+  }
+  .contacts__icons {
+    width: 40px;
+    height: 40px;
+  }
+  .contacts__icons--smaller {
+    width: 35px;
+    height: 35px;
+  }
+  .contacts__container-bottom {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts__card {
+    width: 490px;
+  }
+  .contacts__web-wallet {
+    margin-left: -3px;
+  }
+}
+@media (min-width: 1024px) and (max-height: 600px) {
+  .intro__container-intro {
+    padding: 90px 0 0;
+  }
+  .intro__intro-bottom {
+    width: 55%;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 85px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .info__wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .page-header__container-menu {
+    padding: 0;
+  }
+  .service__link {
+    font-size: 28px;
+  }
+  .service__content-top {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .service__text {
+    font-size: 18px;
+  }
+  .service__span {
+    font-size: 14px;
+  }
+  .discount__number {
+    font-size: 195px;
+  }
+  .discount__text {
+    font-size: 18px;
+  }
+  .benefits p {
+    font-size: 18px;
+  }
+  .experience p {
+    font-size: 18px;
+  }
+  .competence p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1280px) and (min-height: 768px) {
+  .intro__container-intro {
+    padding: 150px 0 0;
+  }
+  .intro__intro-bottom {
+    width: 73%;
+  }
+}
+@media (min-width: 1320px) {
+  .info__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .page-header__list {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .intro__container-intro {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .service__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .discount__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .benefits__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .experience__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .competence__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .portfolio__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .contacts__wrapper {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .contacts__call-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .contacts__social-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .contacts__money-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .contacts .contacts__mail {
+    width: 490px;
+  }
+  .contacts__text--order {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 220px;
+  }
+  .contacts__container-bottom {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .contacts__freelance {
+    margin-left: -16px;
+  }
+  .contacts__skype--margin {
+    margin-right: 75px;
+  }
+}
+@media (min-width: 1440px) and (min-height: 900px) {
+  .intro__container-intro {
+    padding: 180px 0 0;
+  }
+  .intro__intro-bottom {
+    width: 75%;
+    right: -7%;
+  }
+}
+@media (max-width: 768px) {
+  .service__accord {
+    margin-bottom: 20px;
+  }
+  .discount__number {
+    line-height: 1.4;
+  }
+  .discount__content-right {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .contacts span {
+    margin-left: 0;
+  }
+  .contacts__icons {
+    width: 35px;
+    height: 35px;
+  }
+  .contacts__icons--smaller {
+    width: 30px;
+    height: 30px;
+  }
+  .contacts__card .contacts__text,
+  .contacts__web-wallet .contacts__text {
+    font-size: 12px;
+  }
+  .contacts__icons.contacts__icons--visa svg {
+    margin-top: 11%;
+    margin-bottom: -11%;
+  }
+}
