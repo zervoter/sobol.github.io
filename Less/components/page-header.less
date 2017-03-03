@@ -1,0 +1,177 @@
+.page-header {
+	background: #fff url("../img/bg-header.jpg") no-repeat center;
+	background-size: cover;
+
+	&__nav-wrap {
+		background: #fff;
+	}
+	
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.container(1170px, 0 1.27%);
+	}
+
+	&__logo-wrap {
+		
+	}
+	
+	&__logo {
+		
+	}
+	
+	&__list {
+		display: flex;
+	}
+	
+	&__link {
+		position: relative;
+
+		display: block;
+		padding: 25px 10px;
+		font-family: "Raleway","Arial", sans-serif;
+		.font(14px, 700, 25px, #323232);
+		text-transform: uppercase;
+	}
+
+	&__link:hover {
+		color: #0199e6;
+
+		transition: ease 0.35s;
+	}
+
+	&__link:hover::after {
+		content: "";
+		
+		position: absolute;
+		bottom: 23px;
+		left: 50%;
+
+		width: 50%;
+		height: 1px;
+		margin-left: -25%;
+		
+		background: #0199e6;
+	}
+
+	&__intro-container {
+		.container(1170px, 0 1.27%);
+	}
+
+	&__intro {
+		padding: 162px 0 157px; 
+		text-align: center;
+	}
+
+
+	&__title-wrap {
+		padding-bottom: 65px;
+	}
+	
+	&__title {
+		padding-bottom: 25px;
+
+		font-family: "Raleway","Arial", sans-serif;	
+		.font(45px, 500, 60px, #fff);
+	}
+	
+	&__str {
+		font-weight: 700;
+	}
+	
+	&__str--blue {
+		color: #0199e6;
+	}
+	
+	&__subtitle {
+		width: 65%;
+		margin: 0 auto;
+
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+	}
+	
+	&__form-wrap {
+		width: 82.89%;
+		padding: 25px 2%;
+		margin: 0 auto;
+		background: rgba(3, 7, 9, 0.5);
+	}
+
+	&__form {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__inp {
+		display: block;
+		width: 24.5%;
+		padding: 11px 1.5%;
+
+		font-family: "Source Sans Pro","Arial", sans-serif;
+		.font(16px, 400, 30px, #fff);
+
+		background: rgba(3, 7, 9, 0.5);
+		border: 1px solid #04354d;
+		border-left: 3px solid #0199e6;
+		border-radius: 1px;
+		outline: none;
+
+	}
+	
+	&__btn {
+		display: block;
+		width: 22%;
+		padding: 0;
+
+		font-family: "Raleway","Arial", sans-serif;
+		.font(16px, 700, 30px, #fff);
+		text-align: center;
+		text-transform: uppercase;
+
+		background: #008ed6;
+		border: none;
+		border-radius: 1px;
+		cursor: pointer;
+	}
+	
+	&__text {
+		position: relative;
+
+		width: 23.2%;
+		margin-left: 56%;
+		margin-top: 12px;
+
+		font-family: "Source Sans Pro","Arial", sans-serif;
+		.font(16px, 400, 30px, #818688);
+		text-align: left;	
+	}
+
+	&__text::after {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		
+		display: block;
+		width: 34px;
+    height: 26px;
+
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -5px -5px;
+	}
+	
+
+
+
+
+
+
+
+
+}
