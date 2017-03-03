@@ -1,0 +1,103 @@
+.video {
+		padding: 100px 0;
+		background: #fff;
+
+	&__container {
+		.container(1170px, 0 1.27%);
+	}
+	
+	&__title-wrap {
+
+	}
+	
+	&__title {
+		position: relative;
+		margin-bottom: 12px;
+		text-align: center;
+	}
+
+	&__title::after {
+		content: "";
+
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+
+		width: 68px;
+		height: 1px;
+		margin-left: -34px;
+		
+		background: #0199e6;
+	}
+	
+	&__subtitle {
+		padding-bottom: 72px;
+		text-align: center;
+	}
+	
+	&__video-wrap {
+		padding-bottom: 44px;
+		text-align: center;
+	}
+	
+	&__advantages-row {
+		display: flex;
+		justify-content: space-between;
+		width: 82.9%;
+		margin: 0 auto;
+	}
+	
+	&__advantages {
+		position: relative;
+		padding-left: 30px;
+
+		font-family: "Raleway","Arial", sans-serif;
+		.font(18px, 700, 24px, #323232);		
+	}
+
+	&__advantages--img-1::before {
+		content: "";
+
+		position: absolute;
+		top: 3px;
+		left: 0;
+		
+		display: block;		
+		width: 19px;
+    height: 16px;
+    background-image: url("../img/sprite.png");
+		background-repeat: no-repeat;
+    background-position: -5px -811px;
+	}
+
+	&__advantages--img-2::before {
+		content: "";
+
+		position: absolute;
+		top: 2px;
+		left: 0;
+		
+		display: block;		
+		width: 19px;
+    height: 19px;
+    background-image: url("../img/sprite.png");
+		background-repeat: no-repeat;
+    background-position: -5px -837px;
+    
+	}
+
+	&__advantages--img-3::before {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		display: block;		
+		width: 19px;
+    height: 19px;
+    background-image: url("../img/sprite.png");
+		background-repeat: no-repeat;
+    background-position: -5px -744px;
+	}	
+}

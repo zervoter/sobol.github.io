@@ -1,0 +1,159 @@
+.testimonial {
+	padding: 100px 0;
+	background: #fff;
+	&__container {
+		.container(1170px, 0 1.27%);
+	}
+	
+	&__title {
+		position: relative;
+		margin-bottom: 12px;
+		text-align: center;
+	}
+
+	&__title::after {
+		content: "";
+
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+
+		width: 68px;
+		height: 1px;
+		margin-left: -34px;
+		
+		background: #0199e6;
+	}
+	
+	&__subtitle {
+		padding-bottom: 72px;
+		text-align: center;
+	}
+
+	&__clients-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 60.5%;
+		margin: 0 auto;
+		padding-bottom: 95px;
+	}
+
+	&__vogue-logo {
+		width: 129px;
+		height: 45px;
+		background: url("../img/vogue.png")no-repeat center;
+	}
+
+	&__mashable-logo {
+		width: 136px;
+		height: 26px;
+		background: url("../img/mashable.png")no-repeat center;
+	}
+
+	&__tnw-logo {
+		width: 114px;
+		height: 35px;
+		background: url("../img/tnw.png")no-repeat center;
+	}
+
+	&__ng-logo {
+		width: 136px;
+		height: 40px;
+		background: url("../img/ng.png")no-repeat center;
+	}
+
+	&__vogue-logo:hover {
+		transition: 0.3s;
+		background: url("../img/vogue-color.png")no-repeat center;
+	}
+
+	&__mashable-logo:hover {
+		transition: 0.3s;
+		background: url("../img/mashable-color.png")no-repeat center;
+	}
+
+	&__tnw-logo:hover {
+		transition: 0.3s;
+		background: url("../img/tnw-color.png")no-repeat center;
+	}
+
+	&__ng-logo:hover {
+		transition: 0.3s;
+		background: url("../img/ng-color.png")no-repeat center;
+	}
+
+	&__item-row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 31.85%;
+	}
+
+	&__recall-feild {
+		position: relative;
+
+		padding: 45px 5% 30px;
+		margin-bottom: 25px;
+
+		background: #f7f8fa;
+		border-bottom: 2px solid #e5e5e5;
+		border-radius: 2px;
+	}
+	&__recall-feild::before {
+		content: "";
+
+		position: absolute;
+		top: -19px;
+		left: 50%;
+		
+		display: block;
+		width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -5px -866px;
+	}
+
+	&__recall-feild::after {
+		content: "";
+
+		position: absolute;
+		bottom: -17px;
+		left: 50%;
+		
+		display: block;
+		width: 29px;
+    height: 19px;
+    margin-left: -14.5px;
+    background-image: url("../img/corner.png");
+    background-repeat: no-repeat;
+	}
+
+	&__recall {
+		font-family: "Source Sans Pro","Arial", sans-serif;
+		.font(16px, 300, 25px, #727272);
+		font-style: italic;
+		text-align: center;
+	}
+
+	&__name {
+  display: block;
+
+  font-family: "Source Sans Pro","Arial", sans-serif;
+  .font(16px, 400, 25px, #0199e6);	
+  text-align: center;
+	}
+
+	&__network {
+  display: block;
+
+  font-family: "Source Sans Pro","Arial", sans-serif;
+  .font(13px, 400, 25px, #727272);
+  text-align: center;
+	}
+
+}

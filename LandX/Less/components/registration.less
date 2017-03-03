@@ -1,0 +1,57 @@
+.registration {
+	padding: 120px 0 128px;
+	font-family: "Raleway","Arial", sans-serif;
+	background: url("../img/bg-registration.jpg")no-repeat center;
+	
+	&__container {
+		.container(1170px, 0 1.27%);
+		text-align: center;
+		
+	}
+
+	&__subtitle {
+		font-family: "Raleway","Arial", sans-serif;
+		.font(20px, 700, 65px, #fff);
+
+	}
+
+	&__title {
+		.font(35px, 700, 65px, #fff);
+		padding-bottom: 30px;
+	}
+
+	&__btn {
+		position: relative;
+
+		display: block;
+		width: 185px;
+		padding: 12px 0;
+		margin: 0 auto;
+
+		.font(16px, 700, 30px, #fff);
+		text-align: center;
+		text-transform: uppercase;
+
+		background: #008ed6;
+		border-radius: 1px;
+	}
+	&__btn::after {
+		content: "";
+
+		position: absolute;
+		top: 22px;
+		right: 22px;
+		
+		display: block;
+		width: 14px;
+    height: 8px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -5px -677px;		
+	}
+
+
+
+
+
+}

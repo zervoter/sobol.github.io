@@ -1,0 +1,173 @@
+.pricing {
+	padding: 100px 0;
+ 	background: #f7f8fa;
+
+	&__container {
+		.container(1170px, 0 1.27%);
+	}
+	
+	&__title {
+		position: relative;
+		margin-bottom: 12px;
+		text-align: center;
+	}
+
+	&__title::after {
+		content: "";
+
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+
+		width: 68px;
+		height: 1px;
+		margin-left: -34px;
+		
+		background: #0199e6;
+	}
+	
+	&__subtitle {
+		padding-bottom: 72px;
+		text-align: center;
+	}
+	
+	&__item-wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&__item {
+		width: 31.85%;
+		background: #fff;
+		border: 1px solid #e5e5e5;
+	}
+	
+	&__title-wrap {
+		text-align: center;
+		background: #323232;
+	}
+
+	&__title-wrap--color {
+		background: #0199e6;
+	}
+
+	&__item-title {
+		padding-top: 10px;
+		font-size: 24px;
+		line-height: 45px;
+		color: #fff;
+	}
+	
+	&__item-subtitle {
+		padding-bottom: 20px;
+		font-size: 16px;
+		line-height: 22px;
+		color: #fff;
+	}
+
+	&__str {
+		font-family: "Raleway","Arial", sans-serif;
+		font-weight: 700;
+		color: #0199e6;
+	}
+
+	&__str--color {
+		color: #fff;
+	}
+
+	&__list {
+		font-family: "Source Sans Pro","Arial", sans-serif;
+		.font(17px, 400, 50px, #696969);
+	}
+
+	&__list-item {
+		position: relative;
+		padding: 0 8.8%;
+		border-bottom: 1px dotted #e3e3e3;
+	}
+
+	&__list-item--mark::after {
+		content: "";
+
+		position: absolute;
+		top: 16.5px;
+		right: 8.8%;
+		
+		display: block;		
+		width: 13px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite.png");
+    background-position: -5px -719px;
+
+	}
+
+		&__list-item--cros::after {
+		content: "";
+
+		position: absolute;
+		top: 18.5px;
+		right: 9.5%;
+		
+		display: block;		
+		width: 9px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite.png");
+    background-position: -5px -402px;
+	}
+
+	&__price-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 13px 8.8%;
+
+		font-family: "Raleway","Arial", sans-serif;
+
+	}
+	
+	&__price {
+		.font(18px, 700, 24px, #323232);
+	}
+	small {
+		.font(18px, 400, 24px, #323232);
+	}
+
+	&__btn {
+		display: block;
+		width: 95px;
+		padding: 12px 0;
+
+		font-family: "Raleway","Arial", sans-serif;
+		.font(16px, 700, 24px, #727272);
+		text-transform: uppercase;
+		text-align: center;	
+
+		background: #fff;
+		border: 1px solid #727272;
+		border-radius: 2px;
+	}
+
+	&__btn:hover {
+		transition: 0.3s;
+		color: #fff;
+		background: #0199e6;
+		border-color: #0199e6;
+	}
+
+	&__btn--color {
+		color: #fff;
+		background: #0199e6;
+		border-color: #0199e6;
+	}
+
+	&__btn--color:hover {
+		transition: 0.3s;
+		color: #727272;
+		background: #fff;
+		border-color: #727272;
+	}
+
+}
